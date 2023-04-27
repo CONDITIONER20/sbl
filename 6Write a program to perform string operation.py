@@ -1,0 +1,11 @@
+s = "my name is Abc Xyz, name of org is RAIT"
+print("Locations of 'name':", [i for i in range(len(s)) if s.startswith("name", i)])
+s = s.lower()
+print("Lowercase string:", s)
+count_a = s.count('a')
+print("Number of 'a' characters:", count_a)
+print("Locations of 'a':", [i for i in range(len(s)) if s[i] == 'a'])
+s = s.replace('a', ' RAIT')
+print("Replaced string:", s)
+words = s.split()
+print("List of words:", words)
